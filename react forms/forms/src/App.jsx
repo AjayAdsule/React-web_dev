@@ -2,6 +2,7 @@ import React from 'react'
 // import Control from './Component/Conrol'
 // import Forms from './Component/Forms'
 import MultipleInputs from './Component/MultipleInputs'
+// import UseRefs from './UseRef/UseRefs'
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       {/* <Forms/> */}
       <MultipleInputs/>
       {/* <Control/> */}
+      {/* <UseRefs/> */}
     </React.Fragment>
   )
 }

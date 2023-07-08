@@ -6,12 +6,12 @@ const MultipleInputs = () => {
     email: "",
     mobile: "",
     password: "",
-  });// create person object
+  }); // create person object
   const [people, setPeople] = useState([]); //create people array in which store all the person object in form of array of object
   const handleSubmit = (e) => {
     e.preventDefault(); //it will prevent browser to not refreshing the page
     const newPerson = { ...person, id: new Date().getTime().toString() }; // create new object in that i create a id which give unique value and copy all person object
-    setPeople([...people, newPerson]); // copy all object and set in people array 
+    setPeople([...people, newPerson]); // copy all object and set in people array
     setPerson({ name: "", email: "", mobile: "", password: "" });
     console.log(people);
   };
