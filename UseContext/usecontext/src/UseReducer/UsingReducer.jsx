@@ -88,11 +88,12 @@ const UsingReducer = () => {
         <button className="btn">Submit</button>
       </form>
       {state.people.map((person) => {
+        const {id,name}=person
         return (
-          <div className="item" key={person.id}>
-            <p>{person.name}</p>
+          <div className="item" key={id}>
+            <p>{name}</p>
             <button
-              onClick={() => dispatch({ type: "remove", payLoad: person.id })}
+              onClick={() => dispatch({ type: "remove", payLoad: id })}
             >
               Remove
             </button>

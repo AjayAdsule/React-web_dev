@@ -1,3 +1,5 @@
+/* eslint-disable no-dupe-keys */
+/* eslint-disable react/prop-types */
 import React from "react";
 
 // this is main component
